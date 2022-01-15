@@ -1,0 +1,627 @@
+/* ----------START-------------
+_________FONT STYLE__________
+-------------START----------------*/
+ @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Moon+Dance&family=Poppins:wght@500&family=Yuji+Hentaigana+Akebono&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap');
+ /* ----------STOP-------------
+_________FONT STYLE__________
+-------------STOP----------------*/
+/* ----COMMON STYLES------
+--------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body p{
+    font-family: 'Slabo 13px', serif;
+}
+/* ----COMMON STYLES----
+------------------------ */
+
+
+/* ------START----------
+________NAVBAR__________-
+---------START---------------- */
+.navbar{
+    background-color:rgba(0, 0, 0, 0.966);
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 50px;
+}
+.navbar h1{
+    margin-left: 30px;
+    color: crimson;
+    font-family: 'Slabo 13px', serif;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links a{
+    color: white;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-size:20px;
+    text-decoration: none;
+}
+.fa-icon{
+    font-size: 22px;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+/* ------START----------
+________NAVBAR__________-
+-----------STOP-------------- */
+
+
+/* ---------START-----------------------
+_______TOP BANNER________
+-------------START-------------------- */
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 600px;
+    background-color: black;
+}
+.banner-info{
+    padding-top: 200px;
+    padding-left: 20px;
+    color: white;
+}
+.section-title{
+    font-size: 52px;
+    line-height: 62px;
+    margin-left: 18px;
+}
+.banner-info p{
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 32px;
+    font-size: 25px;
+}
+.banner-image img{
+    width: 80%;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+/* ---------STOP-----------------------
+_______TOP BANNER________
+-------------STOP-------------------- */
+
+
+/* ----------START------------------------
+________________INFLUENCER STYLE_________
+------------------------------------------- */
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #3f15d4 0%,
+    #15d625 29%,
+    #ff0457 67%,
+    #eeff00 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+      margin-left: 20px;
+      font-family:'Slabo 13px', serif ;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* ----------------STOP---------------------
+________________INFLUENCER STYLE_____________
+-------------------STOP---------------------- */
+
+
+
+
+/* ------------START-------------------------
+________________ARROW BOUNCE_________________
+--------------------------------------------- */
+.bounce{
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    display: inline-block;
+    font-size: 15px;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateX(20px);
+    }
+    60%{
+        transform: translateX(15px);
+    }
+}
+/* ------------STOP-------------------------
+________________ARROW BOUNCE_________________
+-------------------STOP-------------------------- */
+/* ------BUTTON-STYLES ---------*/
+.btn{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 200px;
+    height:50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: crimson;
+    cursor: pointer;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+/* ------BUTTON-STYLES ---------*/
+
+
+/* ------START-------------------
+_________BRANDS-STYLES __________
+-----------START---------------*/
+
+.container-brands{
+    width: 100%;
+    height: 137px;
+}
+hr{
+    margin: 20px 43px;
+    border-top: 2px solid  gray;
+}
+.brands-names{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.brands-names img{
+    width: 100px;
+}
+
+/* ------STOP-------------------
+_________BRANDS-STYLES __________
+-----------STOP---------------*/
+
+
+/* -----------START----------------------
+_________POPULAR COLLECTION__________
+---------------------START----------------- */
+.container-collection{
+    background-color:#eaebec;
+    height: 1500px;
+}
+.collection-header{
+    color: #3A3A3A;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 52px;
+}
+.fa-star, .fa-star-half-alt{
+    color: #FFC014;
+    margin: 5px 0 5px 0;
+    height: 16px;
+}
+.ratings span{
+    color: ;
+}
+.collection-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.item{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow:-10px 10px 15px  rgb(49, 46, 46);
+}
+.item-img-box{
+    padding: 20px;
+    overflow: hidden;
+}
+.item-img-box img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    overflow: hidden;   
+}
+.item-image{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item-info{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.item-info h1{
+    font-size: 28px;
+    padding-bottom: 3px;
+}
+.item-info h2{
+    font-size:24px;
+}
+
+.item img:hover{
+    transform: scale(1.2);
+}
+#collection-button{
+    float: right;
+    margin-right: 205px;
+    margin-top: 20px;
+}
+#collection-button a{
+    text-decoration: none;
+    font-size: 26px;
+    color: #E02C6D;
+}
+/* -----------STOP----------------------
+_________POPULAR COLLECTION__________
+---------------------STOP----------------- */
+
+/* -----------START----------------------
+_________BENIFITS STYLES__________
+---------------------START----------------- */
+.last-section{
+    width: 100%;
+    margin-top: 0px;
+    height: 500px;
+}
+.last-section-title{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.last-section-title h1{
+    font-size: 45px;
+}
+.last-section-title p{
+    font-size: 22px;
+}
+.benifit-content{
+    display: flex;
+    margin-top: 90px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.benifits-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 40px;
+}
+.benifit-icon{
+    font-size: 50px;
+    margin-right: 20px;
+    color: #318ade;
+    align-items: center;
+    margin-top: 5px;
+}
+/* -----------STOP----------------------
+_________BENIFITS STYLES__________
+---------------------STOP----------------- */
+
+
+/* -----------START----------------------
+_________FOOTER__________
+---------------------START----------------- */
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: #0a0826;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 32px;
+}
+.social-icon{
+    font-size: 25px;
+    margin-right: 8px;
+}
+/* -----------STOP----------------------
+_________FOOTER__________
+---------------------STOP----------------- */
+
+
+/* -------------------------
+------------RESPONSIVE FOR MOBILE-----
+--------------------------------------- */
+@media screen and (max-width: 688px) {
+  .navbar{
+      display: none;
+  }
+    .top-banner{ 
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-info{
+        padding-top: 0px;
+        padding-left: 0px;
+        color: white;
+        width: 100%;
+    }
+    .section-title{
+        font-size: 32px;
+    }
+    .animate-charcter{
+        font-size: 50px;
+    }
+    .banner-info p{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .banner-image img{
+        width: 40%;
+        margin-left: 50px;
+        padding: 0;
+}
+.animation-word{
+    font-size: 50px;
+}
+.container-brands{
+    width: 100%;
+    margin-bottom: 130px;
+}
+hr{
+    margin: 20px 43px;
+    border-top: 2px solid  gray;
+}
+.brands-names{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.brands-names img{
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-collection{
+    background-color:#eaebec;
+    width: 100%;
+    height: 4250px;
+    padding: 0;
+    margin: 0;
+}
+.collection-header{
+margin: 0;
+}
+.collection-area{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+.item{
+    width: 300px;
+    margin-left: 0px;
+    padding-left: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow:-10px 10px 15px  rgb(49, 46, 46);
+}
+.item-img-box img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    overflow: hidden;   
+}
+.item-image{
+    border-radius: 10px;
+}
+.item-info h1{
+    font-size: 28px;
+    padding-bottom: 3px;
+}
+.item-info h2{
+    font-size:30px;
+}
+
+.last-section-title h1{
+    font-size: 45px;
+}
+.last-section-title p{
+    font-size: 22px;
+}
+.benifit-content{
+    display: flex;
+    margin-top: 90px;
+    margin-right: 40px;
+    margin-left:40px;
+}
+.benifits-items{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.last-section{
+    height: 1000px;
+}
+    .last-section-title{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .last-section-title h1{
+        font-size: 45px;
+    }
+    .last-section-title p{
+        font-size: 22px;
+    }
+    .benifit-content{
+        display: flex;
+        margin-top:20px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .benifits-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+    }
+    .benifit-icon{
+        font-size: 50px;
+        margin-right: 20px;
+        color: #318ade;
+        align-items: center;
+    }
+    .benifit-icon{
+        font-size: 50px;
+        margin-right: 20px;
+        color: #318ade;
+        align-items: center;
+        margin-top: 35px;
+    }
+}
+/* --------------------
+-----------RESPONSIVE FOR MOBILE ENDED-
+------------------- */
+
+
+/*------------------
+-------RESPONSIVE FOR TABLET STARTED
+---------------------------------------  */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .navbar{
+        display: none;
+    }
+    .top-banner{ 
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-info{
+        padding-top: 0px;
+        padding-left: 0px;
+        color: white;
+        width: 100%;
+    }
+    .section-title{
+        font-size: 52px;
+    }
+    .animate-charcter{
+        font-size: 90px;
+    }
+    .banner-info p{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    .banner-image img{
+        width: 30%;
+        margin-left: 50px;
+        padding: 0;
+}
+.container-collection{
+    background-color:#eaebec;
+    width: 100%;
+    height: 2500px;
+    padding: 0;
+    margin: 0;
+}
+.collection-header{
+margin: 0;
+}
+.collection-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 300px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow:-10px 10px 15px  rgb(49, 46, 46);
+}
+.item-img-box img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    overflow: hidden;   
+}
+.item-image{
+    border-radius: 10px;
+}
+.item-info h1{
+    font-size: 28px;
+    padding-bottom: 3px;
+}
+.item-info h2{
+    font-size:30px;
+}
+.last-section-title h1{
+    font-size: 45px;
+}
+.last-section-title p{
+    font-size: 22px;
+}
+.benifit-content{
+    display: flex;
+    margin-top: 90px;
+    margin-right: 40px;
+    margin-left:40px;
+}
+.last-section{
+    height: 500px;
+}
+    .last-section-title{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .last-section-title h1{
+        font-size: 45px;
+    }
+    .last-section-title p{
+        font-size: 22px;
+    }
+    .benifit-content{
+        display: flex;
+        margin-top:20px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .benifits-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+    }
+    .benifit-icon{
+        font-size: 50px;
+        margin-right: 20px;
+        color: #318ade;
+        align-items: center;
+    }
+    .benifit-icon{
+        font-size: 50px;
+        margin-right: 20px;
+        color: #318ade;
+        align-items: center;
+        margin-top: 35px;
+    }
+}
+/*------------------
+-------RESPONSIVE FOR TABLET STOP
+---------------------------------------  */
